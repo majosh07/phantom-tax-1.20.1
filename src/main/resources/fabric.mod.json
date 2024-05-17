@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "phantomtax",
+	"version": "${version}",
+	"name": "Phantom Tax",
+	"description": "Thanks to Fanum, my favorite streamer",
+	"authors": [
+		"jporh"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/phantomtax/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.jporh.phantomtax.PhantomTax"
+		],
+		"client": [
+			"net.jporh.phantomtax.PhantomTaxClient"
+		],
+		"fabric-datagen": [
+			"net.jporh.phantomtax.PhantomTaxDataGenerator"
+		]
+	},
+	"mixins": [
+		"phantomtax.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
