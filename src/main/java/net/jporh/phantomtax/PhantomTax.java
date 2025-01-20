@@ -2,6 +2,8 @@ package net.jporh.phantomtax;
 
 import net.fabricmc.api.ModInitializer;
 
+
+import net.minecraft.entity.mob.PhantomEntity;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,7 +13,6 @@ public class PhantomTax implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
 
 	}
 }
